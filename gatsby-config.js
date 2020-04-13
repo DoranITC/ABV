@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Doran Independent`,
+    title: `Doran`,
     description: `Open source Automated Bag Valve Ventilator`,
     author: `@rickity-cricket`,
   },
