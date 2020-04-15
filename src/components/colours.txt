@@ -1,0 +1,13 @@
+#fbc212 // yellow
+
+#019ce6 // blue
+
+#5860a8 // magenta
+
+#fffff2 // off-white
+
+#ffffff // white
+
+#1f1d1d // off-black
+
+#000000 // black

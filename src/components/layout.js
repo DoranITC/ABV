@@ -7,10 +7,17 @@
 
 import React from "react"
 import PropTypes from "prop-types"
+import styled from "styled-components"
 import { useStaticQuery, graphql } from "gatsby"
+import { Row, Col } from "react-bootstrap"
 
 import Bar from "./bar"
 import "./layout.css"
+import ScrollingWrapper from "./container_scrolling"
+
+const Content = styled.div`
+  padding: 2rem;
+`
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -25,23 +32,21 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Bar siteTitle={ data.site.siteMetadata.title }></Bar>
-      <div>
-        <div 
-          style={{
-            marginTop: `8em`
-          }}
-        ></div>
-        <div
-          style={{
-            margin: `0 auto`,
-            maxWidth: 960,
-            padding: `0 1.0875rem 1.45rem`,
-          }}
-        >
-          <main>{children}</main>
-        </div>
-      </div>
+      <Bar>
+        <Content>
+          <Row>
+            <Col lg={4}>
+              {/* <Sidebar></Sidebar> */}
+              Some content here
+            </Col>
+            <Col lg={20}>
+              <ScrollingWrapper>
+                    <main>{children}</main>
+              </ScrollingWrapper>
+            </Col>
+          </Row>
+        </Content>
+      </Bar>  
     </>
   )
 }

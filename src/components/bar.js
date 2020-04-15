@@ -1,41 +1,51 @@
-import React from "react"
-import PropTypes from "prop-types"
-import { Navbar, Nav, NavDropdown } from "react-bootstrap"
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import React from "react";
+import Sidebar from "react-sidebar";
 
+import Menu from "./menu"
+const mql = window.matchMedia(`(min-width: 800px)`);
 
-const Bar = ({ siteTitle }) => {
-  return <>
-    <Navbar bg="light" expand="lg" fixed="top">
-      <Navbar.Brand href="#home">
-        {siteTitle}
-      </Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="mr-auto">
-          <NavDropdown title="Design" id="basic-nav-dropdown">
-            <NavDropdown.Item href="#prototypes">Prototypes</NavDropdown.Item>
-            <NavDropdown.Item href="#github">Design Repo</NavDropdown.Item>
-            <NavDropdown.Item href="#github/documentation">Documentation</NavDropdown.Item>
-          </NavDropdown>
-          <Nav.Link href="#help">How to Help</Nav.Link>
-        </Nav>
-      </Navbar.Collapse>
-      <Nav classname="ml-auto">
-        <Nav.Link href="#who">Who am I?</Nav.Link>
-      </Nav>
-        
-    </Navbar>
-  </>
+class Bar extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      sidebarDocked: mql.matches,
+      sidebarOpen: false,
+      width: 200
+    };
+
+    this.mediaQueryChanged = this.mediaQueryChanged.bind(this);
+    this.onSetSidebarOpen = this.onSetSidebarOpen.bind(this);
+  }
+
+  componentWillMount() {
+    mql.addListener(this.mediaQueryChanged);
+  }
+
+  componentWillUnmount() {
+    mql.removeListener(this.mediaQueryChanged);
+  }
+
+  onSetSidebarOpen(open) {
+    this.setState({ sidebarOpen: open });
+  }
+
+  mediaQueryChanged() {
+    this.setState({ sidebarDocked: mql.matches, sidebarOpen: false });
+  }
+
+  render() {
+    return (
+      <Sidebar
+        sidebar={<Menu/>}
+        open={this.state.sidebarOpen}
+        defaultSidebarWidth={this.state.width}
+        docked={this.state.sidebarDocked}
+        onSetOpen={this.onSetSidebarOpen}
+      > 
+        {this.props.children}
+      </Sidebar>
+    );
+  }
 }
 
-Bar.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Bar.defaultProps = {
-  siteTitle: ``,
-}
-
-export default Bar
+export default Bar;

@@ -1,5 +1,4 @@
 import React from "react"
-import PropTypes from "prop-types"
 import Image from "../components/image"
 import ReactPlayer from "react-player"
 
@@ -7,7 +6,7 @@ const Content = () => {
   return (<div>
       <h2>What?</h2>
       Low-cost Automated Bag Valve Mask Ventilator. An open source design. 
-      <Image style={{ width: `20vw` }}ventilator/>
+      <Image style={{ width: `20vw` }}/>
 
       <h2>Design Philosophy</h2>
         <p>Some content here</p>
@@ -41,17 +40,9 @@ const Content = () => {
           Donec congue diam et metus mollis tincidunt. Nullam ipsum felis, bibendum in orci id, vehicula cursus tortor.
         </p>
         <ReactPlayer
-          url="https://www.youtube.com/watch?v=x7bhCJyynkA&list=FLVG0FMBPT3n-FpqO6v3Kxww&index=12"
+          url="https://www.youtube.com/watch?v=x7bhCJyynkA"
         />
     </div>)
-}
-
-Content.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Content.defaultProps = {
-  siteTitle: ``,
 }
 
 export default Content

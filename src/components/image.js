@@ -15,18 +15,31 @@ import Img from "gatsby-image"
 
 const Image = () => {
   const data = useStaticQuery(graphql`
-    query {
-      ventilator: file(relativePath: { eq: "ventilator.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 500) {
-            ...GatsbyImageSharpFluid
+  query {
+    allFile(filter: {relativeDirectory: {regex: "/(designs)/"}}) {
+      edges {
+        node {
+          base
+          childImageSharp {
+            fluid {
+              base64
+              aspectRatio
+              sizes
+              src
+              srcSet
+            }
           }
         }
       }
     }
+  }
   `)
 
-  return <Img fluid={data.ventilator.childImageSharp.fluid} />
+  return <>
+    {data.allFile.edges.map(({node}) => (
+      <Img fluid={node.childImageSharp.fluid} className="photo"/>
+    ))}
+  </>
 }
 
 export default Image
