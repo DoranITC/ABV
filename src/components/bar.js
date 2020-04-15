@@ -1,7 +1,8 @@
 import React from "react";
 import Sidebar from "react-sidebar";
-
 import Menu from "./menu"
+
+let window = require("global/window")
 const mql = window.matchMedia(`(min-width: 800px)`);
 
 class Bar extends React.Component {
