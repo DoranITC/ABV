@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import styled from 'styled-components'
 
 const AllTheBits = styled.div`
@@ -6,17 +7,20 @@ const AllTheBits = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 15em;
+  width: 25em;
 `
 
 const Menu = () => {
   return (
     <div>
       <AllTheBits>
-        <div>Project Overview</div>
-        <div>Download CAD and Drawings</div>
-        <div>How You Can Help</div>
-        <div>Contact Us</div>
+        <h1>Automated Bag Valve Mask (ABVM) Ventilator</h1>
+        <h2>Open Source</h2>
+        <h2>Low Cost Design</h2>
+        <Link to="/">Project Overview</Link>
+        <Link to="/download">Download CAD and Drawings</Link>
+        <Link to="/help">How You Can Help</Link>
+        <Link to="/contact">Contact Us</Link>
       </AllTheBits>
     </div>
   )

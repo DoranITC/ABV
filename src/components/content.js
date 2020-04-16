@@ -1,5 +1,5 @@
 import React from "react"
-import Image from "../components/image"
+import Image from "./images/image"
 import ReactPlayer from "react-player"
 
 const Content = () => {
