@@ -1,13 +1,13 @@
 import React from "react"
-import Image from "./images/image"
+// import VentFront from "./vent-front.png"
 import ReactPlayer from "react-player"
 
 const Content = () => {
   return (<div>
       <h2>What?</h2>
       Low-cost Automated Bag Valve Mask Ventilator. An open source design. 
-      <Image style={{ width: `20vw` }}/>
-
+      {/* <VentFront style={{ width: `20vw` }}/> */}
+      {/* <img src={VentFront}/> */}
       <h2>Design Philosophy</h2>
         <p>Some content here</p>
         <h3>The Best Idea,  

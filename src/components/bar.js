@@ -2,7 +2,8 @@ import React from "react";
 import Sidebar from "react-sidebar";
 import Menu from "./menu"
 
-const mql = window.matchMedia(`(min-width: 800px)`);
+
+const mql = typeof window !== 'undefined' && window.matchMedia(`(min-width: 800px)`)
 
 class Bar extends React.Component {
   constructor(props) {
@@ -17,11 +18,11 @@ class Bar extends React.Component {
   }
 
   componentWillMount() {
-    mql.addListener(this.mediaQueryChanged);
+    typeof window !== 'undefined' && mql.addListener(this.mediaQueryChanged);
   }
 
   componentWillUnmount() {
-    mql.removeListener(this.mediaQueryChanged);
+    typeof window !== 'undefined' && mql.removeListener(this.mediaQueryChanged);
   }
 
   onSetSidebarOpen(open) {
@@ -29,7 +30,7 @@ class Bar extends React.Component {
   }
 
   mediaQueryChanged() {
-    this.setState({ sidebarDocked: mql.matches, sidebarOpen: false });
+    typeof window !== 'undefined' && this.setState({ sidebarDocked: mql.matches, sidebarOpen: false });
   }
 
   render() {
