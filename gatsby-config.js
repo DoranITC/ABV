@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Doran`,
-    description: `Open source Automated Bag Valve Ventilator`,
+    description: `Automated Bag Valve Ventilator`,
     author: `@rickity-cricket`,
   },
   plugins: [
@@ -24,7 +24,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/D.png`, // This path is relative to the root of the site.
+        // icon: `src/images/D.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

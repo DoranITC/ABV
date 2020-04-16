@@ -34,17 +34,9 @@ const Layout = ({ children }) => {
     <>
       <Bar>
         <Content>
-          <Row>
-            <Col lg={4}>
-              {/* <Sidebar></Sidebar> */}
-              Some content here
-            </Col>
-            <Col lg={20}>
-              <ScrollingWrapper>
-                    <main>{children}</main>
-              </ScrollingWrapper>
-            </Col>
-          </Row>
+          <ScrollingWrapper>
+            <main>{children}</main>
+          </ScrollingWrapper>
         </Content>
       </Bar>  
     </>

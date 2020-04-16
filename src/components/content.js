@@ -4,44 +4,29 @@ import ReactPlayer from "react-player"
 
 const Content = () => {
   return (<div>
-      <h2>What?</h2>
+      {/* <h2>What?</h2>
       Low-cost Automated Bag Valve Mask Ventilator. An open source design. 
-      {/* <VentFront style={{ width: `20vw` }}/> */}
-      {/* <img src={VentFront}/> */}
-      <h2>Design Philosophy</h2>
-        <p>Some content here</p>
-        <h3>The Best Idea,  
-          <small class="text-muted"> Not My Best Idea</small>
-        </h3>
-          <p>How to choose the best idea we have right now, and not get too attached to a single idea</p>
+      <VentFront style={{ width: `20vw` }}/> 
+      <img src={VentFront}/> 
+      <h2>Design Philosophy</h2> */}
+        <p>In response to the Covid 19 pandemic, we intend to develop a mechanism to automate a BVM (Bag Valve Mask; a low-cost), widely-available, manually-operated ventilator). BVMs are available in 3 sizes, are certified for medical use and can be supplemented with oxygen where available.
 
-        <br/>
-        <h3>3 Skill/Resource levels</h3>
+An ABVM requires more than squeezing a bag. It must also have adjustable tidal volume (size of breath) and BPM (Breaths per Minute).
 
-        <br/><br/> 
-      <a name="prototypes"/>
-      <h2>Prototypes</h2>
-        <p>some content</p>
-        <br/>
+The basic design (Garage) can be made with hand tools using locally available materials and a few common electrical components. 
 
-        <h4>
-          Here's a question I have...<br/>
-          <small class="text-muted">This is the answer to that question... Lorem ipsum dolor sit amet, 
-          consectetur adipiscing elit. Maecenas commodo laoreet viverra. Suspendisse pellentesque aliquet bibendum. 
-          Sed maximus posuere sapien eu semper. Curabitur nisl urna, facilisis fermentum nisi sed, hendrerit interdum felis. 
-          Phasellus mattis ex nec blandit porta. In consectetur ut sem in aliquet. Donec a laoreet tellus, a hendrerit ante. 
-          Donec congue diam et metus mollis tincidunt. Nullam ipsum felis, bibendum in orci id, vehicula cursus tortor.</small>
-        </h4>
+The intermidiate version (Precision) is made with machine tools and will incorporate more expensive elements liek bearings and electronic control. 
 
-      <h2>Current Problems that Need a Solution</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas commodo laoreet viverra. Suspendisse pellentesque 
-          aliquet bibendum. Sed maximus posuere sapien eu semper. Curabitur nisl urna, facilisis fermentum nisi sed, hendrerit 
-          interdum felis. Phasellus mattis ex nec blandit porta. In consectetur ut sem in aliquet. Donec a laoreet tellus, a hendrerit ante. 
-          Donec congue diam et metus mollis tincidunt. Nullam ipsum felis, bibendum in orci id, vehicula cursus tortor.
-        </p>
-        <ReactPlayer
+The final, long-term objective is to develop a high-volume, low-cost, CE certified version (Production) built on the learnings from Garage & Precision. Production will use high-volume manufacturing methods, higher quality parts with more focus on safety and approvals. It will include additional functionality/features.
+
+Our designs will be open-source, free for all, but not for profit.
+Success will depend on a community of users to help build and test prototypes and feedback design improvements.
+We don't want many competing desings, but rather a consensus of opinion on the problem, and the best solution.
+
+You can download plans for Garage today, and get started. </p>
+        {/* <ReactPlayer
           url="https://www.youtube.com/watch?v=x7bhCJyynkA"
-        />
+        /> */}
     </div>)
 }
 
