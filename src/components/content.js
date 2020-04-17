@@ -1,10 +1,17 @@
 import React from "react"
-// import VentFront from "./vent-front.png"
+import Four from "./images/four"
+import Seven from "./images/seven"
 import ReactPlayer from "react-player"
 import styled from 'styled-components'
 
 const Main = styled.div`
   padding-top: 5em;
+`
+
+const ImgBox = styled.div`
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
 `
 
 const Content = () => {
@@ -14,6 +21,10 @@ const Content = () => {
       <VentFront style={{ width: `20vw` }}/> 
       <img src={VentFront}/> 
       <h2>Design Philosophy</h2> */}
+      <ImgBox>
+        <Seven/>
+        <Four/>
+      </ImgBox>
       <h2 className="content">In response to the Covid 19 pandemic, we intend to develop a mechanism to automate a BVM (Bag Valve Mask; a low-cost), widely-available, manually-operated ventilator). BVMs are available in 3 sizes, are certified for medical use and can be supplemented with oxygen where available.</h2>
 
       <h2 className="content">An ABVM requires more than squeezing a bag. It must also have adjustable tidal volume (size of breath) and BPM (Breaths per Minute).</h2>

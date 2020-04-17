@@ -14,9 +14,7 @@ const IndexPage = () => (
   <MasterDiv>
     <Layout>
       <SEO title="Home" />
-      
       <Content></Content>
-      <Link to="/ventilator">Ventilator design</Link>
     </Layout>
   </MasterDiv>
 )

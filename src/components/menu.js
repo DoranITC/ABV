@@ -15,7 +15,7 @@ const AllTheBits = styled.div`
 const Menu = () => {
   const ventpic = useStaticQuery(graphql`
       query {
-        file(relativePath: { eq: "imagesabvmgarage/garage.jpg" }) {
+        file(relativePath: { eq: "garage/one.jpg" }) {
           childImageSharp {
             fixed(width: 320, height: 200) {
               ...GatsbyImageSharpFixed
