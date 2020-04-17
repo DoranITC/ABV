@@ -34,7 +34,7 @@ const Menu = () => {
         <h2 style={{fontSize: `2em`}}>Low Cost Design</h2>
         <br/>
         <Link to="/"><h3>Project Overview</h3></Link>
-        <Link to="/download"><h3>Download CAD and Drawings</h3></Link>
+        <Link to="/garage/garage_2020APR17.zip"><h3>Download CAD and Drawings</h3></Link>
         <Link to="/help"><h3>How You Can Help</h3></Link>
         <Link to="/contact"><h3>Contact Us</h3></Link>
         <Img fixed={ventpic.file.childImageSharp.fixed} />
