@@ -1,12 +1,7 @@
 import React from "react"
 import Four from "./images/four"
 import Seven from "./images/seven"
-import ReactPlayer from "react-player"
 import styled from 'styled-components'
-
-const Main = styled.div`
-  padding-top: 5em;
-`
 
 const ImgBox = styled.div`
   display: flex;
@@ -14,9 +9,9 @@ const ImgBox = styled.div`
   justify-content: space-around;
 `
 
-const Content = () => {
-  return (<Main>
-      {/* <h2>What?</h2>
+const Home = () => {
+  return (<div>
+    {/* <h2>What?</h2>
       Low-cost Automated Bag Valve Mask Ventilator. An open source design. 
       <VentFront style={{ width: `20vw` }}/> 
       <img src={VentFront}/> 
@@ -61,7 +56,7 @@ const Content = () => {
         {/* <ReactPlayer
           url="https://www.youtube.com/watch?v=x7bhCJyynkA"
         /> */}
-    </Main>)
+    </div>)
 }
 
-export default Content
+export default Home

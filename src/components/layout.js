@@ -8,36 +8,28 @@
 import React from "react"
 import PropTypes from "prop-types"
 import styled from "styled-components"
-import { useStaticQuery, graphql } from "gatsby"
-import { Row, Col } from "react-bootstrap"
 
 import Bar from "./bar"
 import "./layout.css"
 import ScrollingWrapper from "./container_scrolling"
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 const Content = styled.div`
   padding: 2rem;
+  background-color: #fffff2;
 `
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
 
   return (
     <>
       <Bar>
-        <Content>
-          <ScrollingWrapper>
-            <main>{children}</main>
-          </ScrollingWrapper>
-        </Content>
+          <Content>
+            <ScrollingWrapper>
+              <main>{children}</main>
+            </ScrollingWrapper>
+          </Content>
       </Bar>  
     </>
   )
