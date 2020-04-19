@@ -7,7 +7,6 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import styled from "styled-components"
 
 import Bar from "./bar"
 import "./layout.css"
@@ -15,21 +14,17 @@ import ScrollingWrapper from "./container_scrolling"
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-const Content = styled.div`
-  padding: 2rem;
-  background-color: #fffff2;
-`
 
 const Layout = ({ children }) => {
 
   return (
     <>
       <Bar>
-          <Content>
+          <div className="content">
             <ScrollingWrapper>
               <main>{children}</main>
             </ScrollingWrapper>
-          </Content>
+          </div>
       </Bar>  
     </>
   )
