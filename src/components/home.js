@@ -29,7 +29,7 @@ const Home = () => {
             Download the latest design files:<br />
             <div style={{ display: "flex", justifyContent: "space-around", paddingTop: `0.5em`}}>
             <div><a href="https://github.com/dorandesigned/AutoBVM" target="_blank"><FontAwesomeIcon icon={faCloudDownloadAlt} /> Github</a></div>
-            <div><Link to="/"><FontAwesomeIcon icon={faFileArchive} /> Mirror</Link></div>
+            <div><Link to="/garage/garage_2020APR17.zip"><FontAwesomeIcon icon={faFileArchive} /> Mirror</Link></div>
             </div>
           </p>
         </div>
