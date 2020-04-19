@@ -8,7 +8,8 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import Bar from "./bar"
+import Bar from "./Sidebar/bar"
+// import Toolbar from "./Toolbar/Toolbar"
 import "./layout.css"
 import ScrollingWrapper from "./container_scrolling"
 
@@ -19,13 +20,14 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Bar>
-          <div className="content">
-            <ScrollingWrapper>
-              <main>{children}</main>
-            </ScrollingWrapper>
-          </div>
-      </Bar>  
+        <Bar>
+          {/* <Toolbar/> */}
+            <div className="content">
+              <ScrollingWrapper>
+                <main>{children}</main>
+              </ScrollingWrapper>
+            </div>
+        </Bar>  
     </>
   )
 }

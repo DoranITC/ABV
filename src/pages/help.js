@@ -1,7 +1,7 @@
 import React from "react"
 
 import Layout from "../components/layout"
-import Help from "../components/help"
+import Help from "../components/Help/help"
 import SEO from "../components/seo"
 import 'bootstrap/dist/css/bootstrap.min.css';
 

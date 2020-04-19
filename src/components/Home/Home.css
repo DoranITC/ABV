@@ -1,0 +1,119 @@
+.mainLink {
+  color: #019ce6;
+  text-decoration: none;
+}
+.homepage
+{
+  display: flex;
+  flex-flow: row wrap;
+  padding: 2em;
+}
+
+@media screen and (min-width: 801px) {
+  .main_title {
+    font-size: 3vw;
+  }
+  .understand
+  {
+    font-size: 1.8vw;
+    text-align: center;
+  }
+
+  .abstract {
+    padding-top: 1em;
+  }
+
+  .text_block {
+    font-size: 1.5vw;
+  }
+  .links_box {
+    margin: 1em 30%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .main_title {
+    font-size: 6vw;
+  }
+
+  .text_block {
+    font-size: 2.5vw;
+  }
+
+  .understand
+  {
+    text-align: center;
+    font-size: 3.5vw;
+  }
+
+  .abstract {
+    padding-top: 1vw;
+  }
+
+  .links_box {
+    margin: 1em 15vw;
+  }
+  .image_box {
+    margin: 0 0 0 10vw;
+  }
+}
+
+.links_box {
+  border-radius: 10px;
+  text-align: center;
+  background-color: #5860a8; 
+  border: 1px solid #4e4b4d; 
+  list-style: none;
+  padding: 0;
+  color: white;
+}
+.download_links {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-around;
+  padding-top: 0.5em;
+}
+.link {
+  border-radius: 10px;
+  padding: 0.3em;
+  background-color: #fbc212;
+  color: black;
+}
+
+.image_box
+{
+  display: flex;
+  justify-content: space-around;
+}
+/*
+
+.content {
+  width: inherit;
+  font-size: 1.2em;
+  padding: 2rem;
+  background-color: #fffff2;
+}
+
+.readeasy{
+	-moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-font-smoothing: antialiased !important;
+	color: #333;
+	padding: 0 0 0.2em 0;
+	font-weight: 500;
+	font-size: 1.2vw;
+	line-height: 1.8;
+	text-align: justify;
+}
+
+p { 
+	font-weight: 500;
+	line-height: 1.8;
+	text-align: justify;
+}
+
+.mainTitle {
+  font-size: 3vw;
+  justify-content: center;
+}
+*/

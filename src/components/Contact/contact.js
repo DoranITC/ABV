@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 const Form = () => {
   return(
-    <div style={{overflowY: "hidden"}}>
+    <div>
       <div>
       <form method="post" netlify-honeypot="bot-field" data-netlify="true"  class="form-style-9">
       <input type="hidden" name="bot-field"/>
@@ -43,9 +43,11 @@ const TopBit = styled.div`
 const Contact = () => {
   return (<div>
       <TopBit>
-        <h1>Contact Us</h1>
-        <p>Send us a message or improvement suggestion:</p>
-        <p>Leave your contact information and we'll try our best to get back to you</p>
+        <div>
+          <p className="title">Contact Us</p>
+          <p className="msg">Send us a message or improvement suggestion:</p>
+          <p className="msg">Leave your contact information and we'll try our best to get back to you</p>
+        </div>
       </TopBit>
       <Form></Form>
     </div>)

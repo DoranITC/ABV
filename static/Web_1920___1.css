@@ -1,0 +1,228 @@
+.mediaViewInfo {
+	--web-view-name: Web 1920 – 1;
+	--web-view-id: Web_1920___1;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+:root {
+	--web-view-ids: Web_1920___1;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+#Web_1920___1 {
+	position: absolute;
+	width: 1920px;
+	height: 1080px;
+	background-color: rgba(235,235,229,1);
+	overflow: hidden;
+	--web-view-name: Web 1920 – 1;
+	--web-view-id: Web_1920___1;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+.Rectangle_1 {
+	position: absolute;
+	overflow: visible;
+	width: 594px;
+	height: 1080px;
+	left: 0px;
+	top: 0px;
+}
+#Automated_Bag_Valve_Mask__ABVM {
+	position: absolute;
+	left: 39px;
+	top: 144px;
+	overflow: hidden;
+	width: 508px;
+	height: 115px;
+	text-align: center;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 42px;
+	color: rgba(46,46,46,1);
+}
+#Open_Source_Low_Cost_Design {
+	position: absolute;
+	left: 0px;
+	top: 270px;
+	overflow: visible;
+	width: 595px;
+	height: 89px;
+	text-align: center;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 38px;
+	color: rgba(46,46,46,1);
+}
+#Automated_Bag_Valve_Mask_Venti {
+	position: absolute;
+	left: 788px;
+	top: 106px;
+	overflow: visible;
+	width: 848px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 48px;
+	color: rgba(46,46,46,1);
+}
+#________In_response_to_the_Cov {
+	position: absolute;
+	left: 1075px;
+	top: 467px;
+	overflow: hidden;
+	width: 771px;
+	height: 572px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	color: rgba(46,46,46,1);
+}
+.Rectangle_6 {
+	position: absolute;
+	overflow: visible;
+	width: 442px;
+	height: 157px;
+	left: 79px;
+	top: 859px;
+}
+#Main_design_pic_of_ventilator {
+	position: absolute;
+	left: 79px;
+	top: 887px;
+	overflow: visible;
+	width: 443px;
+	height: 101px;
+	text-align: center;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 38px;
+	color: rgba(112,112,112,1);
+}
+#Group_5 {
+	position: absolute;
+	width: 308px;
+	height: 227px;
+	left: 1086px;
+	top: 950px;
+	overflow: visible;
+}
+#Group_73 {
+	position: absolute;
+	width: 301px;
+	height: 182px;
+	left: 1148px;
+	top: 259px;
+	overflow: visible;
+}
+#Group_37 {
+	position: absolute;
+	width: 301px;
+	height: 182px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+#Group_67 {
+	position: absolute;
+	width: 300px;
+	height: 182px;
+	left: 1530px;
+	top: 259px;
+	overflow: visible;
+}
+#Group_43 {
+	position: absolute;
+	width: 300px;
+	height: 182px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Path_1 {
+	overflow: visible;
+	position: absolute;
+	width: 333px;
+	height: 484px;
+	left: 647px;
+	top: 403px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Download_latest_design_bundle_ {
+	position: absolute;
+	left: 647px;
+	top: 418px;
+	overflow: hidden;
+	width: 334px;
+	height: 128px;
+	text-align: center;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 22px;
+	color: rgba(46,46,46,1);
+}
+#glyph_french_vanilla {
+	position: absolute;
+	width: 36.118px;
+	height: 30.6px;
+	left: 722px;
+	top: 471px;
+	overflow: visible;
+}
+.Path_2 {
+	overflow: visible;
+	position: absolute;
+	width: 18.066px;
+	height: 11.509px;
+	left: 0px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Path_3 {
+	overflow: visible;
+	position: absolute;
+	width: 18.066px;
+	height: 11.509px;
+	left: 18.052px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Path_4 {
+	overflow: visible;
+	position: absolute;
+	width: 18.066px;
+	height: 11.509px;
+	left: 0px;
+	top: 11.429px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Path_5 {
+	overflow: visible;
+	position: absolute;
+	width: 18.066px;
+	height: 11.509px;
+	left: 18.052px;
+	top: 11.429px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Path_6 {
+	overflow: visible;
+	position: absolute;
+	width: 18.066px;
+	height: 11.509px;
+	left: 9.091px;
+	top: 19.091px;
+	transform: matrix(1,0,0,1,0,0);
+}

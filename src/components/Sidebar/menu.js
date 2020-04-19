@@ -30,11 +30,11 @@ const Menu = () => {
     <div>
       <AllTheBits>
         <h1 className="mainTitle">Automated Bag Valve Mask (ABVM) Ventilator</h1>
-        <h2 style={{fontSize: `2em`}}>Open Source</h2>
-        <h2 style={{fontSize: `2em`}}>Low Cost Design</h2>
+        <h2 style={{fontSize: `1.8em`}}>Open Source</h2>
+        <h2 style={{fontSize: `1.8em`}}>Low Cost Design</h2>
         <br/>
         <Link className="mainLink" to="/"><h3>Project Overview</h3></Link>
-        <Link className="mainLink" to="/garage/garage_2020APR17.zip"><h3>Download CAD and Drawings</h3></Link>
+        <Link className="mainLink" to="/garage/garage_2020APR13.zip"><h3>Download CAD and Drawings</h3></Link>
         <Link className="mainLink" to="/help"><h3>How You Can Help</h3></Link>
         <Link className="mainLink" to="/contact"><h3>Contact Us</h3></Link>
         <Img fixed={ventpic.file.childImageSharp.fixed} />

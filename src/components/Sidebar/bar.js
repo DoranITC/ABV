@@ -37,9 +37,9 @@ class Bar extends React.Component {
     return (
       <Sidebar
         sidebar={<Menu/>}
-        // open={this.state.sidebarOpen}
+        open={this.state.sidebarOpen}
         docked={this.state.sidebarDocked}
-        // onSetOpen={this.onSetSidebarOpen}
+        onSetOpen={this.onSetSidebarOpen}
       > 
         {this.props.children}
       </Sidebar>

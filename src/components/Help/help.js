@@ -1,7 +1,7 @@
 import React from "react"
 
 import { useStaticQuery, graphql } from "gatsby"
-import Worker from "../images/carpentry.png"
+import Worker from "../../images/carpentry.png"
 
 
 const Help = () => {
