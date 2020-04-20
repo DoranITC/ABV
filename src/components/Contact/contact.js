@@ -43,7 +43,7 @@ const TopBit = styled.div`
 const Contact = () => {
   return (<div>
       <TopBit>
-        <div>
+        <div className="top_bit_container">
           <p className="title">Contact Us</p>
           <p className="msg">Send us a message or improvement suggestion:</p>
           <p className="msg">Leave your contact information and we'll try our best to get back to you</p>
