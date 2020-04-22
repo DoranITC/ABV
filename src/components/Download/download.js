@@ -10,8 +10,10 @@ const TopBit = styled.div`
 
 const Contact = () => {
   return (<TopBit>
-      <p>You can find the design files in several places, <a href="__blank">Github</a> will hold release tags for each level of design
-
+      <h1>Download</h1>
+      <p>
+        Github will hold a .zip archive for each level of design as they're released, containing 3D designs, any 2D drawings, and the white paper explanation of the design.
+        Below you'll also find the pdf of the white paper.
       </p>
       <Links />
     </TopBit>)

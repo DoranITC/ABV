@@ -7,7 +7,7 @@ import Links from  '..//links'
 
 const Home = () => {
 
-  const ventpic = useStaticQuery(graphql`
+  const ventpics = useStaticQuery(graphql`
       query {
         file(relativePath: { eq: "garage/Image10.png" }) {
           childImageSharp {
@@ -17,6 +17,7 @@ const Home = () => {
           }
         }
       }
+
     `)
 
   return (
@@ -39,7 +40,7 @@ const Home = () => {
           <Links />
 
         <div className="image_box">
-          <Img fixed={ventpic.file.childImageSharp.fixed} />
+          <Img fixed={ventpics.file.childImageSharp.fixed} />
         </div>
       </div>
       <br />
