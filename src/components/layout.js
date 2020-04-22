@@ -11,7 +11,6 @@ import PropTypes from "prop-types"
 import Bar from "./Sidebar/bar"
 // import Toolbar from "./Toolbar/Toolbar"
 import "./layout.css"
-import ScrollingWrapper from "./ScrollingContainer/ScrollingContainer"
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 

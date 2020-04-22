@@ -21,13 +21,16 @@
 
   .abstract {
     padding-top: 1em;
+    font-size: 1.2vw;
   }
 
   .text_block {
     font-size: 1.3vw;
   }
-  .links_box {
-    margin: 1em 30%;
+
+  .text_section {
+    font-size: 2vw;
+    font-weight: bold;
   }
 }
 
@@ -40,8 +43,12 @@
     font-size: 2.5vw;
   }
 
-  .understand
-  {
+  .text_section {
+    font-size: 3vw;
+    font-weight: bold;
+  }
+
+  .understand {
     text-align: center;
     font-size: 3.5vw;
   }
@@ -50,40 +57,16 @@
     padding-top: 1vw;
   }
 
-  .links_box {
-    width: 100vw;
-  }
   .image_box {
-    margin: 0 0 0 10vw;
+    margin: 0 0 0 5vw;
   }
-}
-
-.links_box {
-  border-radius: 10px;
-  text-align: center;
-  background-color: #5860a8; 
-  border: 1px solid #4e4b4d; 
-  list-style: none;
-  padding: 0;
-  color: white;
-}
-.download_links {
-  display: flex;
-  margin: 0 auto;
-  justify-content: space-around;
-  padding-top: 0.5em;
-}
-.link {
-  border-radius: 10px;
-  padding: 0.3em;
-  background-color: #fbc212;
-  color: black;
 }
 
 .image_box
 {
   display: flex;
   justify-content: space-around;
+  flex-flow: row wrap;
 }
 /*
 

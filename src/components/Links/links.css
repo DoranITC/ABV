@@ -1,0 +1,39 @@
+ @media screen and (min-width: 801px) {
+  .links_box {
+    margin: 1em 20%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .links_box {
+    width: 80vw;
+  }
+}
+
+.links_box {
+  border-radius: 10px;
+  text-align: center;
+  /* background-color: #5860a8;  */
+  /* border: 1px solid #4e4b4d;  019ce6 // blue*/
+  background-image: -webkit-gradient(linear, top, bottom, from(#5860a8), to(#019ce6));
+  background-image: -webkit-linear-gradient(top, #019ce6, #5860a8);
+  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.2), 0px 1px 0px rgba(255, 255, 255, .7);
+  text-shadow: 0px -1px 0px black;
+  list-style: none;
+  padding: 0;
+  color: white;
+}
+.download_links {
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 1vw;
+}
+.link {
+  border-radius: 7px;
+  padding: 0.3em;
+  margin: 0.3em;
+  background-color: #fbc212;
+  color: black;
+}
