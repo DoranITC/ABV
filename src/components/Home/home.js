@@ -1,14 +1,24 @@
 import React from "react"
 import "./Home.css"
-import Four from "../images/four"
-import Seven from "../images/seven"
-import { Link } from "gatsby"
-
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFileArchive, faCloudDownloadAlt, faFileExcel } from '@fortawesome/free-solid-svg-icons'
+// import Seven from "../../images/garage/Image4.png"
+import Img from 'gatsby-image'
+import { Link, useStaticQuery, graphql } from "gatsby"
+import Links from  '..//links'
 
 const Home = () => {
+
+  const ventpic = useStaticQuery(graphql`
+      query {
+        file(relativePath: { eq: "garage/Image10.png" }) {
+          childImageSharp {
+            fixed(width: 320, height: 200) {
+              ...GatsbyImageSharpFixed
+            }
+          }
+        }
+      }
+    `)
+
   return (
     <div className="homepage">
       <div>
@@ -26,20 +36,10 @@ const Home = () => {
             </p>
           </div>
         
-          <div className="links_box">
-            <div>
-              <p>
-                Download the latest design files:<br />
-                <div className="download_links">
-                  <div className="link"><a href="https://github.com/dorandesigned/AutoBVM" target="_blank"><FontAwesomeIcon icon={faCloudDownloadAlt} /> Github</a></div>
-                  <div className="link"><Link to="/garage/garage_2020APR13.zip"><FontAwesomeIcon icon={faFileArchive} /> Mirror</Link></div>
-                </div>
-              </p>
-            </div>
-          </div>
+          <Links />
 
         <div className="image_box">
-          <div><Seven /><Four /></div>
+          <Img fixed={ventpic.file.childImageSharp.fixed} />
         </div>
       </div>
       <br />

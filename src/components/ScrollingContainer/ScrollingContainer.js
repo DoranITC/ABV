@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
+import './scrollingContainer.css'
 
 class ScrollingWrapper extends React.Component {
   state = { hasScrolled: false }
