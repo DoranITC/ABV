@@ -9,17 +9,17 @@ const Home = () => {
 
   const ventpics = useStaticQuery(graphql`
       query {
-        mobileImage: file(relativePath: { eq: "garage/Image7.png" }) {
+        mobileImage: file(relativePath: { eq: "garage/Image5.png" }) {
           childImageSharp {
-            fluid(maxWidth: 700) {
-              ...GatsbyImageSharpFluid
+            fixed(width: 320, height: 200) {
+              ...GatsbyImageSharpFixed
             }
           }
         }
         desktopImage: file(relativePath: { eq: "garage/Image10.png" }) {
           childImageSharp {
-            fluid(maxWidth: 700) {
-              ...GatsbyImageSharpFluid
+            fixed(width: 320, height: 200) {
+              ...GatsbyImageSharpFixed
             }
           }
         }
@@ -47,8 +47,8 @@ const Home = () => {
           <Links />
 
         <div className="image_box">
-          <Img fluid={ventpics.desktopImage.childImageSharp.fluid} />
-          <Img fluid={ventpics.mobileImage.childImageSharp.fluid} />
+          <Img fixed={ventpics.desktopImage.childImageSharp.fixed} />
+          <Img fixed={ventpics.mobileImage.childImageSharp.fixed} />
         </div>
       </div>
       <br />
@@ -79,7 +79,7 @@ const Home = () => {
         but rather a consensus of opinion on the problem, and the best solution.
         <br />
         
-        <br /> You can <Link to="/garage/Garage20APR20.zip">download plans</Link> for Garage today, and get started.
+        <br /> You can <Link to="/garage/garage2020APR13.zip">download plans</Link> for Garage today, and get started.
       </span>
     </div>
   )
