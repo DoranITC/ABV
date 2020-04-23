@@ -79,7 +79,7 @@ const Home = () => {
         but rather a consensus of opinion on the problem, and the best solution.
         <br />
         
-        <br /> You can <Link to="/garage/garage2020APR13.zip">download plans</Link> for Garage today, and get started.
+        <br /> You can <Link to="/download">download plans</Link> for Garage today, and get started.
       </span>
     </div>
   )
