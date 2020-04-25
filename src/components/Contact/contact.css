@@ -1,4 +1,3 @@
-
 @media screen and (min-width: 801px) {
 	.title {
 		font-size: 3vw;
@@ -7,10 +6,9 @@
 }
 @media screen and (max-width: 800px) {
 	.title {
-		font-size: 6vw;
+		font-size: 8vw;
 	}
-	.msg { font-size: 2.5vw; }
-
+	.msg { font-size: 4vw; }
 }
 
 .form-style-9{

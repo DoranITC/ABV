@@ -35,13 +35,13 @@ const Form = () => {
 }
 
 const TopBit = styled.div`
-  padding-top: 2em;
   padding-left: 2em;
 
 `
 
 const Contact = () => {
   return (<div>
+    <div className="body_container">
       <TopBit>
         <div className="top_bit_container">
           <p className="title">Contact Us</p>
@@ -49,7 +49,8 @@ const Contact = () => {
           <p className="msg">Leave your contact information and we'll try our best to get back to you</p>
         </div>
       </TopBit>
-      <Form></Form>
+      <Form />
+    </div>
     </div>)
 }
 

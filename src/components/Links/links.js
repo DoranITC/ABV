@@ -5,8 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFileArchive, faCloudDownloadAlt, faFilePdf } from '@fortawesome/free-solid-svg-icons'
 
 const Links = () => (
-  <div className="links_box">
-    <div>
+  <div className="links_container">
+    <div className="links_box">
       <p>
         Download the latest design files:<br />
         <div className="download_links">

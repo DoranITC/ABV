@@ -9,7 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 
 import Bar from "./Sidebar/bar"
-// import Toolbar from "./Toolbar/Toolbar"
+import Topbar from "./Topbar/Topbar"
 import "./layout.css"
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -19,12 +19,10 @@ const Layout = ({ children }) => {
 
   return (
     <>
-        <Bar>
-          {/* <Toolbar/> */}
-            <div className="content">
-                <main>{children}</main>
-            </div>
-        </Bar>  
+      <Topbar />
+      <div className="content">
+          <main>{children}</main>
+      </div>
     </>
   )
 }

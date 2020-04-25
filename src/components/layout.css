@@ -1,0 +1,11 @@
+@media screen and (max-width: 800px) {
+  .body_container {
+    margin: 5vw;
+  }
+}
+
+@media screen and (min-width: 801px) {
+  .body_container {
+    margin: 8vw;
+  }
+}

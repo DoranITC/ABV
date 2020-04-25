@@ -1,6 +1,7 @@
  @media screen and (min-width: 801px) {
   .links_box {
     margin: 1em 20%;
+    width: 40vw;
   }
 }
 
@@ -10,8 +11,13 @@
   }
 }
 
+.links_container {
+  display: flex;
+  justify-content: center;
+}
+
 .links_box {
-  border-radius: 10px;
+  border-radius: 5px;
   text-align: center;
   /* background-color: #5860a8;  */
   /* border: 1px solid #4e4b4d;  019ce6 // blue*/

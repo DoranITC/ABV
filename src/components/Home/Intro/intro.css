@@ -1,0 +1,47 @@
+.introduction {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 2em 10vw;
+  margin: 2vw 8vw;
+}
+
+.understand {
+  margin: 5vw;
+}
+
+@media screen and (min-width: 801px) {
+  .main_title {
+    font-size: 3vw;
+  }
+  .sub_title {
+    font-size: 2vw;
+  }
+  .understand {
+    font-size: 1.8vw;
+    text-align: center;
+  }
+
+  .abstract {
+    padding-top: 1em;
+    font-size: 1.2vw;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .main_title {
+    font-size: 6vw;
+  }
+
+  .sub_title {
+    font-size: 4vw;
+  }
+
+  .understand {
+    text-align: center;
+    font-size: 3.5vw;
+  }
+
+  .abstract {
+    padding-top: 1vw;
+  }
+}
